@@ -1,6 +1,16 @@
 public class App {
     public static void main(String args[]) {
 
+
+        System.out.println("<<<<<<<<=========================>>>>>>>>>>>>");
+        // employee class with attributes of default and parametrized constructor
+        EmployeeData employeeData1 = new EmployeeData();
+        EmployeeData employeeData2 = new EmployeeData("Hamza", 21);
+        System.out.println("Default Constructor: " + employeeData1);
+        System.out.println("Parametrized Constructor: " + employeeData2);
+
+        System.out.println("<<<<<<<<<<<<=======================>>>>>>>");
+        // find how many number of odds and even in array
         int num[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, even = 0, odd = 1;
 
         for (int i = 1; i < num.length; i++) {
@@ -18,11 +28,11 @@ public class App {
 
         // Data Class Object
         StudentData studentData = new StudentData();
-        studentData.studenName = "Waqas Muhammad";
+        studentData.studentName = "Waqas Muhammad";
         studentData.studentFatherName = "Muhammad Haseeb";
         studentData.studentAge = 18;
 
-        System.out.println("Student Name: " + studentData.studenName);
+        System.out.println("Student Name: " + studentData.studentName);
         System.out.println("Student Father Name: " + studentData.studentFatherName);
         System.out.println("Student Age: " + studentData.studentAge);
 
@@ -48,9 +58,24 @@ public class App {
     }
 }
 
+class EmployeeData {
+    String name;
+    int salary;
+
+    EmployeeData() {
+        name = "Null";
+        salary = 0;
+    }
+
+    EmployeeData(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+}
+
 // Student Data Class
 class StudentData {
-    String studenName;
+    String studentName;
     String studentFatherName;
     int studentAge;
 }

@@ -1,13 +1,18 @@
 public class App {
     public static void main(String args[]) {
 
+        // Private Data Calling in Main Function
+        Test test = new Test();
+        test.setPrivateData(21);
+        test.getPrivateData();
+        System.out.println("Public Data = " + test.data);
 
         System.out.println("<<<<<<<<=========================>>>>>>>>>>>>");
         // employee class with attributes of default and parametrized constructor
-        EmployeeData employeeData1 = new EmployeeData();
-        EmployeeData employeeData2 = new EmployeeData("Hamza", 21);
-        System.out.println("Default Constructor: " + employeeData1);
-        System.out.println("Parametrized Constructor: " + employeeData2);
+        // EmployeeData employeeData1 = new EmployeeData();
+        // EmployeeData employeeData2 = new EmployeeData("Hamza", 21);
+        // System.out.println("Default Constructor: " + employeeData1);
+        // System.out.println("Parametrized Constructor: " + employeeData2);
 
         System.out.println("<<<<<<<<<<<<=======================>>>>>>>");
         // find how many number of odds and even in array
@@ -56,6 +61,22 @@ public class App {
 
         System.out.println("<<<<<<===================>>>>>>>>>>>");
     }
+}
+
+class Test {
+
+    int data = 50;
+    private int dataPrivate = 100;
+
+    public void setPrivateData(int pData) {
+        dataPrivate = pData;
+        System.out.println("Private Data = " + pData);
+    }
+
+    public int getPrivateData() {
+        return dataPrivate;
+    }
+
 }
 
 class EmployeeData {

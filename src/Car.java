@@ -9,6 +9,8 @@ public class Car {
     }
 }
 
+
+// Inheritance
 class Honda extends Car {
 
     Honda(String model, String make) {

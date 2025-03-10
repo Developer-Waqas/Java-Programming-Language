@@ -1,7 +1,7 @@
 public class App {
     public static void main(String args[]) {
 
-        Honda honda = new Honda("CIVIC", "JAPAN");
+        Honda honda = new Honda("Civic", "JAPAN");
         System.out.println(honda.model);
         System.out.println(honda.make);
 

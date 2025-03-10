@@ -1,6 +1,12 @@
 public class App {
     public static void main(String args[]) {
 
+        EmpStats empStats = new EmpStats("Waqas Muhammad ", 201111);
+
+        System.out.println("EMployee Name" + empStats.empName);
+        System.out.println("EMployee Salary" + empStats.salary);
+        System.out.println("<<<<<<<<<<=========================>>>>>>>>>>>>>>>");
+
         // Private Data Calling in Main Function
         Test test = new Test();
         test.setPrivateData(21);
@@ -14,7 +20,7 @@ public class App {
         // System.out.println("Default Constructor: " + employeeData1);
         // System.out.println("Parametrized Constructor: " + employeeData2);
 
-        System.out.println("<<<<<<<<<<<<=======================>>>>>>>");
+        // System.out.println("<<<<<<<<<<<<=======================>>>>>>>");
         // find how many number of odds and even in array
         int num[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, even = 0, odd = 1;
 
@@ -62,4 +68,3 @@ public class App {
         System.out.println("<<<<<<===================>>>>>>>>>>>");
     }
 }
-

@@ -1,10 +1,9 @@
 public class App {
     public static void main(String args[]) {
 
-        Dog d1 = new Dog();
-        System.out.println(d1.name = "Fido");
-        System.out.println(d1.age = 2);
-        d1.bark();
+        Honda honda = new Honda("CIVIC", "JAPAN");
+        System.out.println(honda.model);
+        System.out.println(honda.make);
 
         // System.out.println("<<<<<<<<<<=========================>>>>>>>>>>>>>>>");
 

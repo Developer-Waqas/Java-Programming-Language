@@ -11,6 +11,7 @@ public class StaticVariable {
     public static void main(String[] args) {
         Marks marks1 = new Marks();
 
+        // Change static variable value by class not by class instance 
         Marks.marks = 50;
         marks1.showMarks();
     }
